@@ -54,3 +54,7 @@ The form will open in the browser. Create an account to see it appear in the das
 ## Note
 
 This is a front-end learning project. Because it does not have a backend or database, its account entries are saved only in the browser where they were created. Clearing that browser's site data will remove the saved entries.
+
+## Demo video
+
+[Watch the project demo](https://drive.google.com/file/d/1ckAP3IqKPx3nkQ8rxARjzjNJdYWtNYUE/view?usp=sharing)
