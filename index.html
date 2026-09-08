@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple account signup form and member dashboard.">
+  <title>Signup & Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <section class="card-area">
+      <section class="signup-card" aria-labelledby="signup-title">
+        <div class="card-heading"><p class="section-label">SIGN UP</p><h1 id="signup-title">Create your account</h1><p>Enter your details below.</p></div>
+        <form id="signup-form" novalidate>
+          <div class="field"><label for="username">Full name</label><input type="text" id="username" name="username" placeholder="e.g. Maya Sharma" autocomplete="name" aria-describedby="username-error"><small class="field-error" id="username-error"></small></div>
+          <div class="field"><label for="email">Email address</label><input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" aria-describedby="email-error"><small class="field-error" id="email-error"></small></div>
+          <div class="field"><div class="label-row"><label for="password">Password</label><span>Min. 8 characters</span></div><div class="password-wrap"><input type="password" id="password" name="password" placeholder="Create a strong password" autocomplete="new-password" aria-describedby="password-error password-help"><button class="toggle-password" type="button" aria-label="Show password" aria-pressed="false">Show</button></div><small id="password-help" class="field-hint">Use uppercase, lowercase, a number, and a symbol.</small><small class="field-error" id="password-error"></small></div>
+          <button class="primary-button" type="submit">Create account <span aria-hidden="true">→</span></button><p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+      <section class="dashboard-card" aria-labelledby="dashboard-title">
+        <div class="dashboard-heading"><div><p class="section-label">DASHBOARD</p><h2 id="dashboard-title">Saved accounts</h2></div><span id="member-count" class="member-count">0 accounts</span></div>
+        <div id="empty-state" class="empty-state"><span aria-hidden="true">+</span><p>No accounts yet</p><small>Accounts you create will appear here.</small></div><div id="member-list" class="member-list" aria-live="polite"></div>
+      </section>
+    </section>
+  </main><script src="script.js"></script>
+</body>
+</html>
