@@ -2,6 +2,10 @@
 
 A small front-end project for creating and managing account entries. It provides a responsive signup form with client-side validation and a dashboard that displays the accounts saved in the current browser.
 
+## Live website
+
+[Open the live project](https://vivekkk8406.github.io/my-first-project/)
+
 ## How to run the project
 
 No installation, server, or package manager is required.
